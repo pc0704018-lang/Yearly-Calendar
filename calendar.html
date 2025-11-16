@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Yearly Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <button class="nav" onclick="changeYear(-1)">⬅ Previous</button>
+    <h1 id="yearTitle">Year</h1>
+    <button class="nav" onclick="changeYear(1)">Next ➡</button>
+
+    <button id="darkToggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+</header>
+
+<div id="calendar" class="calendar-container"></div>
+
+<div class="festival-box">
+    <h2>Indian Festivals</h2>
+    <ul id="festivalList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
